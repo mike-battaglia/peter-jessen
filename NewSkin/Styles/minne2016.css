@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* //////////////////////////// */
+/* css layout by
+/* Sarah Wischmeyer
+/* www.applesandelephants.com 
+/* //////////////////////////// */
+
+
+/* ~~ Element/Tag Selectors ~~ */
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	color: #fff; background-color: #444;
+	margin: 0; padding: 0;
+}
+
+p, td { padding: 0; margin: 0 0 15px 0; }
+
+h1 { font-size:1.6em; margin: 0 0 10px 0; } /* see also Layout Breakpoints */
+h2 { font-size:1.4em; margin: 5px 0 10px 0; }
+h3 { font-size:1.2em; margin: 15px 0 10px 0; }
+h4 { font-size:1em; margin: 10px 0; }
+h5, h6 { font-size:.7em; margin: 10px 0; }
+
+h1, h2, h3, h4, h5, h6, strong { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;  } 
+
+hr { border: 0; color: #f66; background-color: #f66; height: 1px;}
+
+a { text-decoration: underline; }
+a:link, a:visited { color:#000; }
+a:hover, a:active, a:focus { color:#777; }
+
+img { border: none; }
+
+/* ~~ Class Selectors ~~ */
+
+.pixspacer { margin-right: 4px; }
+
+.fltrgt { float: right; margin-left: 16px; }
+.fltlft { float: left; margin-right: 16px; }
+.clearfloat { clear: both; }
+.clearfix { overflow: auto; }
+
+.center { text-align: center }
+.right { text-align: right }
+
+.txtsmall { font-size: smaller; }
+.txtemphasis { font-size: larger; font-weight: bold; color: #c00; }
+
+.tagline { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; font-style:italic; font-weight: bold; font-size: x-large; text-align: center; margin: 20px 0; color: #060; } /* fix line break / word wrap!!! And maybe different sizes for breakpoints !!! */
+
+.attention { font-size: x-large; text-align: center; padding: 20px; background-color: #CC6; color: #c00; }
+
+.cite { font-style: italic; }
+
+.author { font-style: italic; text-align: right; }
+.author:before { content: "~ ";  }
+
+/* Scalable iframe */
+.xframe { position: relative; height: 0; overflow: hidden; }
+.xframe-16x9 { padding-bottom: 56.25%; } 
+.xframe-4x3 { padding-bottom: 75%; }
+.xframe iframe { position: absolute; top:0; left: 0; width: 100%; height: 100%; }
+/* wrap iframe in <div class="xframe xframe-16x9 xframe-4x3"> */
+
+
+/* //////////////////////////////////// */
+/*  Layout Breakpoints
+/* //////////////////////////////////// */
+
+/* ~~ Mobile ~~ */
+
+.container {
+	width: 100%;
+	margin: 0 auto;	 
+}
+.container img {
+	max-width: 100%;
+	height: auto;
+}
+
+header { display:block; background-color:#900; /*#600;*/}
+header .container { background-color:#900; padding: 0 }
+
+nav { color:#fff; background-color:#300; }
+nav ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+nav ul li {float: left;}
+nav ul li.icon { float: right; display: inline-block; }
+ul.homeNav li a { font-size: 1.4em; }
+nav ul li a { display: inline-block; padding: 14px 16px; text-decoration: none; font-size: 1em; }
+nav ul li a:link, nav ul li a:visited { color:#fff; }
+nav ul li a:hover, nav ul li a:active, nav ul li a:focus { color:#fff; background-color: #060; }
+
+/* to add JavaScript functionality */
+ul.topNav { border-bottom: 1px solid #ddd;}
+ul.topNav li {display: none;}
+ul.topNav li a { border-top: 1px solid #ddd;}
+ul.topNav.responsive li { float: none; display: inline; }
+ul.topNav.responsive li a { display: block; text-align: left;  }
+
+section { background-color:#fff; color:#000; padding: 30px 20px; clear: both; }
+
+section p, section td { font-size: .9em; }
+
+section h1 { font-size:1.4em; }
+section h2 { font-size:1.2em; }
+section h3 { font-size:1em; }
+
+section ul { list-style-type: disc;}
+section li {padding-bottom: 6px; }
+
+section a .fa-linkedin:before {
+	text-decoration: none;
+	color: #fff; background-color: #0077B5;
+	font-size: 1.4em;
+	border-radius: 6px;
+	padding: 4px;
+}
+section a:hover .fa-linkedin:before {
+	background-color: #060;
+}
+
+article {  margin-top: 30px; padding: 20px 0; clear: both; overflow: auto; }
+article { border-top: 1px solid #f66 }
+/*article hr { position: absolute; width: 50%;}*/
+
+article .cell1 { float: none; width: 100%; margin-right: 0; }
+article .cell2 { float: none; width: 100%; }
+article .testimonial { display: inline-block; overflow: hidden; width: 90%; padding: 20px 14px; text-align: center; font-size: 1em; }
+
+footer { color:#fff; }
+
+ul.footNav { list-style-type: none; margin: 0; padding: 0; overflow: hidden; font-size: 1em; }
+ul.footNav li a { display: block; text-align: left; padding: 14px 16px; text-decoration: none; border-bottom: 1px solid #ddd; }
+ul.footNav li a:link, ul.footNav li a:visited { color:#fff; }
+ul.footNav li a:hover, ul.footNav li a:active, ul.footNav li a:focus { color:#000; background-color: #f66;}
+
+footer .footerText { padding: 14px 16px; }
+footer .footerText p { font-size: .8em; line-height: 1em; }
+footer .footerText a .fa-linkedin:before {
+	text-decoration: none;
+	color: #fff; background-color: #0077B5;
+	font-size: 1.4em;
+	border-radius: 6px;
+	padding: 4px; margin: 0 10px;
+}
+footer .footerText a:hover .fa-linkedin:before {
+	background-color: #060;
+}
+
+/* ~~ Tablet ~~ */
+@media only screen and (min-width: 760px) {
+
+.container {
+	width: 720px;
+	margin: 0 auto;
+}
+
+nav .container { background-color:#300; overflow: hidden; }
+ul.homeNav {float: left;}
+ul.homeNav li a { font-size: 1.2em; }
+
+ul.topNav { border: none; overflow: hidden; float: left; }
+ul.topNav li {display: block;}
+ul.topNav li a { border: none;}
+nav ul li a { transition: 0.3s; font-size: 1.2em; }
+
+nav ul li.icon {display: none;}
+ul.topNav.responsive li {display: inline-block;}
+
+section { padding: 30px 0; }
+
+section p, section td { font-size: 1em; }
+
+section h1 { font-size:1.6em; }
+section h2 { font-size:1.4em; }
+section h3 { font-size:1.2em; }
+
+article .cell1 { float: left; width: 300px; margin-right: 20px; }
+article .cell2 { float: left; width: 400px; }
+article .testimonial { width: 206px; padding: 14px; vertical-align: middle; font-size: 1em; }
+
+ul.footNav { float: left; margin: 24px 0;}
+ul.footNav li { display: inline; float: left; }
+ul.footNav li:before { display: inline; float: left; content: " | "; padding: 0 8px; }
+ul.footNav li:first-child:before { content: ""; padding: 0 0; }
+ul.footNav li a { isplay: inline; float: left; padding: 0; border-bottom: none; }
+ul.footNav li a:link, ul.footNav li a:visited { color:#fff; }
+ul.footNav li a:hover, ul.footNav li a:active, ul.footNav li a:focus { color:#f66; background-color: #444;}
+
+footer .footerText { padding: 14px 36px; clear: both; border-top: 1px solid #ddd; }
+footer .footerText p { font-size: 1em; line-height: 1em; }
+
+}
+
+/* ~~ Desktop Layout Standard ~~ */
+@media only screen and (min-width: 1040px) {
+
+.container { width: 960px; }
+
+ul.homeNav li a { font-size: 1.4em; }
+nav ul li a { font-size: 1.4em; }
+
+article .cell1 { float: left; width: 320px; margin-right: 30px; }
+article .cell2 { float: left; width: 610px; }
+article .testimonial { width: 276px; padding: 20px; }
+
+article.indent { display: inline-block; padding: 20px 150px;}
+
+}
+
+/* ~~ Desktop Layout Wide ~~ 
+@media only screen and (min-width: 1280px) {
+
+.container { width: 1200px; }
+
+}*/

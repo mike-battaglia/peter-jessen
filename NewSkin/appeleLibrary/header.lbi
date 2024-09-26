@@ -1,0 +1,12 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<header>
+  <div class="container"> 
+  <a href="../index.html">
+ <picture>
+      <source media="(min-width: 900px)" srcset="Images/Theme/AE_940pxBanner.png">
+      <source media="(min-width: 500px)" srcset="Images/Theme/AE_720pxBanner.png">
+      <source media="(min-width: 200px)" srcset="Images/Theme/AE_400pxBanner.png">
+      <img src="../Images/Theme/AE_940pxBanner.png" alt="Apples and Elephants"> </picture>
+    </a>
+    </div>
+</header>

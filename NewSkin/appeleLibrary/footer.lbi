@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<footer>
+  <div class="container">
+    <ul class="footNav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../projctsol.html">Projects</a></li>
+      <!--<li><a href="#">Portfolio</a></li>-->
+      <li><a href="../training.html">Training</a></li>
+      <!--<li><a href="#">Software</a></li>-->
+      <li><a href="../testimonials.html">Testimonials</a></li>
+      <!--<li><a href="#">Blog</a></li>-->
+      <li><a href="../about.html">About</a></li>
+      <!--<li><a href="#">Contact</a></li>-->
+    </ul>
+    <div class="footerText">
+      <p>Sarah Wischmeyer <a href="https://www.linkedin.com/in/sarahwischmeyer" target="_blank"><i class="fa fa-linkedin"></i><i class="glyphicon glyphicon-home"></i></a></p>
+      <p>Project Solutions, Training, and Instructional Design</p>
+      <p>&copy;2009-2016 All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
